@@ -1,4 +1,33 @@
+.container {
+  padding: 50px;
+}
+
+.repo-item {
+  padding: 3px;
+  border-bottom: 1px solid gray;
+}
+
 .list-title {
   text-align: center;
   font-size: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.items-end {
+  align-items: flex-end;
 }
