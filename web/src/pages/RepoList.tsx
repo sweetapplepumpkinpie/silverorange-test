@@ -27,12 +27,17 @@ export function RepoList() {
     const temp: string[] = [];
 
     repoStore?.state.repos.map((repo) => {
-      !temp.includes(repo.language) && temp.push(repo.language);
+      !temp.includes(repo.language) &&
+        repo.language &&
+        temp.push(repo.language);
     });
     return temp;
   }, [repoStore]);
   const handleClick = (event: BaseSyntheticEvent) => {
     setCurrentLanguage(() => event.target.id);
+  };
+  const handleAllClick = () => {
+    setCurrentLanguage('');
   };
 
   return (
@@ -63,6 +68,7 @@ export function RepoList() {
           )}
         </div>
         <div className="flex flex-col items-end">
+          <button onClick={handleAllClick}>All</button>
           {languages?.length ? (
             languages.map((language) => {
               return (
