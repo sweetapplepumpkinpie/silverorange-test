@@ -24,6 +24,7 @@
     "@types/react-dom": "^17.0.13",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.0",
     "typescript": "~4.5.5",
     "web-vitals": "^2.1.4"
@@ -38,8 +39,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'",
-    "prettier": "prettier --list-different 'src/**/*.{scss,css,js,ts,jsx,tsx}'",
-    "prettier-write": "prettier --write 'src/**/*.{scss,css,js,ts,jsx,tsx}'"
+    "lint": "eslint --fix --ext \"src/**/*.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --list-different \"src/**/*.{scss,css,js,ts,jsx,tsx}\"",
+    "prettier-write": "prettier --write \"src/**/*.{scss,css,js,ts,jsx,tsx}\""
   }
 }
